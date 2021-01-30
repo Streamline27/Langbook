@@ -53,9 +53,4 @@ HELP.md
 ### VS Code ###
 .vscode/
 # Project exclude paths
-/infrastructure/build/
-/infrastructure/build/classes/java/main/
-/m-tasks/build/
-/m-tasks/build/classes/java/main/
-/m-users/build/
-/m-users/build/classes/java/main/
+*/build/
