@@ -11,8 +11,8 @@ import org.springframework.context.annotation.Import;
         UsersModule.class
 })
 @SpringBootApplication
-public class LangbookApp {
+public class LangBookApp {
     public static void main(String[] args) {
-        SpringApplication.run(LangbookApp.class, args);
+        SpringApplication.run(LangBookApp.class, args);
     }
 }

@@ -11,6 +11,10 @@ repositories {
 dependencies {
     implementation project(':m-users')
     implementation project(':m-tasks')
+    implementation project(':m-api')
+
+    compileOnly 'org.projectlombok:lombok:1.18.16'
+    annotationProcessor 'org.projectlombok:lombok:1.18.16'
 
     implementation 'org.postgresql:postgresql'
     implementation group: 'org.flywaydb', name: 'flyway-core', version: '7.5.2'
