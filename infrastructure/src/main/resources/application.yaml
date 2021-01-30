@@ -1,0 +1,19 @@
+spring:
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: admin
+    password: admin
+    hikari:
+      connectionTimeout: 30000
+      idleTimeout: 600000
+      maxLifetime: 1800000
+flyway:
+  enabled: true
+
+tasks:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres?currentSchema=tasks
+    username: admin
+    password: admin

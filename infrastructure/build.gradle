@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '2.4.2'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation project(':m-users')
+    implementation project(':m-tasks')
+
+    implementation 'org.postgresql:postgresql'
+    implementation group: 'org.flywaydb', name: 'flyway-core', version: '7.5.2'
+
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}

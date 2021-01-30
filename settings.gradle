@@ -1,0 +1,5 @@
+rootProject.name = 'Langbook'
+include 'infrastructure'
+include 'm-tasks'
+include 'm-users'
+

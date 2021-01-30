@@ -1,0 +1,13 @@
+# Use postgres/example user/password credentials
+version: '3.1'
+
+services:
+
+  multimodule-postgres:
+    container_name: multimodule-postgres
+    image: postgres
+    ports:
+    - 5432:5432
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
